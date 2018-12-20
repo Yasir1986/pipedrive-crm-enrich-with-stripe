@@ -1,6 +1,6 @@
 Follow the steps to run this Hambuger-Menu-Header in React
 
-git clone 
+git clone https://github.com/Yasir1986/react-boiler-plate.git
 
 npm install
 
