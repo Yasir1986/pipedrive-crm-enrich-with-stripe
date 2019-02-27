@@ -1,0 +1,31 @@
+.setting-logo{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: #e64980;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .setting-text{
+      display: flex;
+      justify-content: center;
+      margin-top: 25%;
+      height: 19px;
+      font-family: Roboto;
+      font-size: 16px;
+      color: #ffffff;
+  }
+  .setting-logo:hover{
+    background-color: #a1234f;
+  }
+  #simple-popper{
+    color:  black;
+   /* background-color: bisque; */
+  }
+  /* .test{
+    background-color: aqua; //half background-color works
+    height: 100%;
+  } */
+  .MuiDialog-container-7{
+    height: 0px;
+  }

@@ -1,0 +1,116 @@
+.main-container{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    background-color: #FFFFFF;
+}
+.logo-div{
+    margin: 5px 30px;
+}
+.vainu-logo{
+    height:50px;
+}
+.rightimg-div{
+    position: relative;
+    top: -5px;
+    right: 65px;
+    float: right;
+}
+.right-img{
+    width: 643.8px;
+    height: 366px;
+}
+.left-side{
+    margin-top: 5%;
+    margin-left: 4%
+}
+.enrich-your-pipedrive{
+    width: 665px;
+    height: 90px;
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2a33;
+  }
+.choose-what{
+    width: 790px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #46525c;
+    text-decoration: none;
+}
+.buy-now{
+    margin-top: 1.6%;
+    width: 550px;
+    height: 300px;
+    background-color: #be224b;
+}
+.login-here{
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 260px;
+    height: 9px;
+    font-family: Roboto;
+    letter-spacing: normal;
+}
+.buy-now-title{
+    padding-top: 25px;
+    color: white;
+    height: 60px;
+    font-family: Oswald;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.main-form-div{
+    margin-left: 16%; 
+    margin-top: 7%;
+}
+.main-email-input{
+    background-color: none;
+    border: 7px solid #D41B53;
+    width: 80%;
+    height: 50px;
+}
+.main-email-input::placeholder{
+    /* position: relative;
+    left: 6px; */
+    text-indent: 8px;
+}
+#icon{
+    position: relative;
+    right: 354px;
+    top: 2px;
+}
+.main-ccv-input{
+    background-color: none;
+    border: 7px solid #D41B53;
+    width: 80%;
+    height: 50px;
+}
+.main-ccv-input::placeholder{
+    text-indent: 34px;
+}
+.buy-btn{
+    border-width: 14px;
+    border-color: #D41B53;
+    border-style: solid;
+    width: 72%;
+    height: 65px;
+    margin-left: 13.5%;
+    background-color: #8B1D3A;
+    color: white;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,96 @@
+.full-container{
+    display: flex;
+    height: -webkit-fill-available;
+}
+.logo-div{
+    margin: 15px 35px;
+}
+.vainu-logo{
+    height:50px;
+}
+.left-half {
+    background-color: #EAF1FA;
+    flex: 1;
+    padding: 1rem;
+  }
+.right-half {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 1rem;
+  }
+.pipedrivelogo-div{
+    display: flex;
+    justify-content: center;
+  }
+.drive-logo{
+    margin-top: 24%;
+    height: 280px;
+    width: 685px; 
+  }
+.main-text{
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+.main-text:h1{
+    width: 634px;
+    font-family: Oswald;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1f2a33;
+  }
+.checklogo-div{
+    margin-top: 9%;
+    margin-left: 2%;
+  }
+.check-logo{
+    height: 40px;
+    width: 40px;
+  }
+.disconnect-btn{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 4%;
+    width: 194px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #868686;
+    cursor: pointer;
+}
+.disconnect-btn:hover{
+    background-color: #474747;
+}
+.com-in-pipe{
+  margin-left: 2%;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000000;
+}
+.start-btn-div{
+  margin-top: 30%;
+  margin-left: 2%;
+}
+.start-btn{
+  border: 1px solid #f13366;
+  border-radius: 37px;
+  width: 177px;
+  height: 50px;
+  font-family: Oswald;
+  font-size: 20px;
+  color: #e64980;
+  cursor: pointer;
+}
+.start-btn:hover{
+  background-color: #fccede;
+}
+.search-companies{
+  margin-left: 2%;
+  margin-top: 4%;
+}
