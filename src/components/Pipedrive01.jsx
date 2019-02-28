@@ -6,12 +6,13 @@ import '../styles/css/Pipedrive01.css';
 import Search from '../components/Search.jsx';
 import SettingLogo from '../components/SettingLogo.jsx';
 import { Link } from 'react-router-dom';
+//import ButtonTextChange from './ButtonTextChange';
 
 class Pipedrive01 extends Component {
     constructor(props) {
         super();
         this.state = {
-            text: '',
+            btnText: true,
             on: false
         }
     }
@@ -20,13 +21,11 @@ class Pipedrive01 extends Component {
             on: !this.state.on 
         });
      }
-
-    ChangeButtonText = () => {
-         this.setState({
-             text: 'Enrichinh 234/11123 leads'
-         });
-     }
-  
+     ChangeButtonText = () => {
+        this.setState({ 
+            btnText: !this.state.btnText 
+        });
+    };  
     render () {
   //      const { classes } = this.props;
         return (
@@ -60,26 +59,30 @@ class Pipedrive01 extends Component {
                             <span className="com-in-pipe">11123 companies in Pipedive</span>
                         <div className="start-btn-div">    
                             <button
-                            // onClick={() => this.setState({title: 'Enriching Leads...'})}>{this.state.button}
-                            onClick={(event) => {this.toggle(); this.ChangeButtonText();}}
+                            onClick={(event) => { this.toggle(); this.ChangeButtonText(); }}
                             className="start-btn"
                             type="button"     
                             >
-                            <p>Start enrichment
-                                {/* <p>onClick={this.ChangeButtonText}>{this.state.text}</p> */}
-                            </p>
+                             {this.state.btnText ? "Start enrichment" : "Enriching ../.. leads"} 
                         </button>
-                        {this.state.text}   
-                        </div>
-                          <div className="search-companies">
-                            {
+                            {/* <button className="btn-again"
+                              onClick={console.log("jkh")}
+                            >Enrich again now
+                            </button> */}
+                            <div className="search-companies">
+                                {
                                 this.state.on &&
                                 <h4>
                                     <Search />
+                                    {/* <ButtonTextChange 
+                                   
+                                    /> */}
                                 </h4>
-                            } 
-                        </div> 
-                         {/* {this.state.on ? <Search /> : null} //This works but no css */}
+                                }  
+                            </div>  
+                            {/* This also works to render search component
+                             {this.state.on ? <Search /> : null}   */}
+                        </div>
                     </div>
                 </div>
             </Fragment>

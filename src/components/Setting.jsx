@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ButtonTextChange from './ButtonTextChange';
 
 
 class Setting extends Component {
@@ -7,6 +8,7 @@ class Setting extends Component {
     return (
       <div>
           <h1>SETTING</h1>
+          <ButtonTextChange />
       </div>
     )
   }

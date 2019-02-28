@@ -1,30 +1,31 @@
 import React, { Component } from 'react'
-import axios from 'axios';
 
 class Search extends Component {
   constructor(props) {
     super();
     this.state = {
-        temp : []
+        mainData: []
     };
 }
-
-  componentDidMount(){
-    axios.get('/api/poll_async_processes/')
-      .then(res => {
-        // console.log(temp);
-        const temp = res.data;  
-        this.setState({ temp });
-    });
-}
+  fetchData(){
+      const url = "api/poll_async_processes/";
+      const tmp=[];
+        fetch(url)
+          .then(response =>response.json())
+          .then(inf=>{
+            inf.forEach(item=>tmp.push(item));
+            this.setState({mainData:tmp})
+        })
+    }
+componentDidMount(){
+      this.fetchData();
+} 
   render() {
-    // console.log(persons.data.id);
     return (
       <div>
-            <ul>
-              { this.state.temp.map(temp1 => <li>{temp1.state}</li>)}
-              {/* { this.state.temp && this.state.temp.map(temp1 => <li>{temp1.owner}</li>)} */}
-            </ul>
+            <h4>{this.state.mainData[0] && this.state.mainData[0].meta_data.match_count} companies found on pipedrive</h4>
+            <h4> {this.state.mainData[1] && this.state.mainData[1].meta_data.current} matched companies</h4>
+            <h4> {this.state.mainData[2] && this.state.mainData[2].meta_data.total} updated compaines</h4>
       </div>
     )
   }

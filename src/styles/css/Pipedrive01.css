@@ -74,7 +74,7 @@
   color: #000000;
 }
 .start-btn-div{
-  margin-top: 30%;
+  margin-top: 20%;
   margin-left: 2%;
 }
 .start-btn{
@@ -93,4 +93,18 @@
 .search-companies{
   margin-left: 2%;
   margin-top: 4%;
+}
+.btn-again{
+  /* display: none; */
+  width: 122px;
+  height: 19px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #e64980;
+  margin-left: 3%;
+  cursor: pointer;
+  border-radius: 37px;
+}
+.btn-again:hover{
+  background-color: #fccede;
 }

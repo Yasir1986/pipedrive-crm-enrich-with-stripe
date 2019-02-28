@@ -18,7 +18,7 @@ class App extends Component {
               <Route path="/pipedrive" component={Pipedrive} />
               <Route path="/pipedrive01" component={Pipedrive01}></Route>
               <Route path="/setting" component={Setting}></Route>
-              <Route component={PageNotFound} />
+              <Route component={PageNotFound} /> 
             </Switch>
         </BrowserRouter>
     );
