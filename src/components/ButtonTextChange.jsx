@@ -9,7 +9,7 @@ class ButtonTextChange extends Component {
       <div>
         {/* <h1>Button Text Change Component</h1> */}
         <button onClick={this.handleClick}>
-        {this.state.isChange ? "Start":"Stop"}
+          {this.state.isChange ? "Start" : "Stop"}
         </button>
       </div>
     );

@@ -9,6 +9,7 @@ class Setting extends Component {
       <div>
           <h1>SETTING</h1>
           <ButtonTextChange />
+          <p>under construction</p>
       </div>
     )
   }
