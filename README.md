@@ -7,3 +7,9 @@ npm install
 npm start
 
 Enjoy 
+
+OR 
+
+Live delpoy link: 
+
+https://silly-williams-0dc417.netlify.app/
